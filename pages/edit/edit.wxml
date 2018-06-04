@@ -1,0 +1,47 @@
+<!--pages/edit/edit.wxml-->
+<view class="container">
+
+<form bindsubmit="formSubmmit" bindreset="formReset">
+  <view class="section">
+    <view class="section_title" id="t1">会议名称</view>
+    <input name="conferenceName" value="{{conferenceName}}"/>
+
+    <view class="section_title">开会日期</view>
+    <picker mode="date" name="conferenceDate" value="{{conferenceDate}}" bindchange="bindDateChange">
+      <view>{{conferenceDate}}</view>
+    </picker>
+
+    <view class="section_title">开会时间</view>
+    <picker mode="time" name="conferenceTime" value="{{conferenceTime}}" bindchange="bindTimeChange">
+      <view>{{conferenceTime}}</view>
+    </picker>
+  </view>
+
+  <view class="section">
+    <view class="section_title">开始日期</view>
+    <picker mode="date" name="openday" value="{{openday}}" bindchange="bindOdChange">
+      <view>{{openday}}</view>
+    </picker>
+
+    <view class="section_title">截止日期</view>
+    <picker mode="date" name="ddl" value="{{ddl}}" bindchange="bindDdlChange">
+      <view>{{ddl}}</view>
+    </picker>
+  </view>
+
+  <view class="secction">
+    <textarea name="agenda" placeholder="输入会议说明" value="{{agenda}}" />
+  </view>
+ 
+  <view class="secction">
+    <switch name="connect" bindchange="connect"/> <view class="connecttext">关联到群</view>
+  </view>
+  
+  <view class="btn-area">
+    <button formType="submit" type="primary">发布</button>
+    <button formType="reset">重置</button>
+  </view>
+
+
+</form>
+</view>

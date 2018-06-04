@@ -1,0 +1,35 @@
+{
+  "pages": [
+    
+    "pages/edit/edit",
+    "pages/submit/submit",
+    "pages/create_list/create_list",
+    "pages/attend_list/attend_list",
+    "pages/index"
+  ],
+  "window": {},
+  "tabBar": {
+    "color": "#fff",
+    "selectedColor": "#0FD084",
+    "borderStyle": "white",
+    "backgroundColor": "black",
+    "list": [
+      {
+        "pagePath": "pages/edit/edit",
+        "text": "新建"
+      },
+      {
+        "pagePath": "pages/create_list/create_list",
+        "text": "我创建的"
+      },
+      {
+        "pagePath": "pages/attend_list/attend_list",
+        "text": "我参与的"
+      },
+      {
+        "pagePath": "pages/index",
+        "text": "我的"
+      }
+    ]
+  }
+}
