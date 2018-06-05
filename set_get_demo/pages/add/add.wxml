@@ -1,0 +1,5 @@
+<!--pages/add/add.wxml-->
+<view class="add-page">
+    <input placeholder="输入事件名称" type="text" bindinput="bindKeyInput" value="{{inputValue}}"  />
+     <button type="warn" class="add-btn" bindtap="addbtn" >添加</button>
+</view>

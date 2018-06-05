@@ -1,0 +1,11 @@
+<!--pages/get/get.wxml-->
+<text>你的消息已经保存！</text>
+<view class="menu-item">
+  <navigator class="menu-item-main" >
+     <text class="menu-item-name">事件</text>
+     <view class="ordtel">
+        <text class="ordtext">{{addtel}}</text>
+        <image class="menu-item-icon"   src="/image/tel.png"></image>
+     </view>            
+  </navigator>
+</view>
