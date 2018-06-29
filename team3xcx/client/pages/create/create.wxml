@@ -1,0 +1,30 @@
+<!--pages/create/create.wxml-->
+<view class="page">
+ 
+<form class="page__bd" catchsubmit="formSubmit">
+    <view class="section_title" id="t1">会议名称：</view>
+    <input name="c_name" placeholder="请输入会议名称" auto-focus/>
+    <picker  mode="date" name="c_date" bindchange="bindDateChange">
+      <view>开会日期：{{c_date}}</view>
+    </picker> 
+    <picker mode="time" name="c_time" bindchange="bindTimeChange">
+      <view>开会时间：{{c_time}}</view>
+    </picker>
+
+    <picker mode="date" name="c_open" bindchange="bindOdChange">
+      <view>开始日期：{{c_open}}</view>
+    </picker> 
+    
+    <picker mode="date" name="c_close" bindchange="bindDdlChange">
+      <view>结束日期：{{c_close}}</view>
+    </picker>
+
+    <textarea name="c_remark" placeholder="输入会议说明" />
+
+      <button class="btn-area" formType="submit">提交</button>
+
+    <view class="page__hd" wx:if="{{error}}">
+      <text>{{error}}</text>
+    </view>
+</form>
+</view>

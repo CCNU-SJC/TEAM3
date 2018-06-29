@@ -1,0 +1,32 @@
+<!--pages/mycreate/mycreate.wxml-->
+<!--获得用户个人信息-->
+ <view class="category-item">
+
+<view class="userinfo"> 
+<open-data class="userinfo-avatar" type="userAvatarUrl"></open-data>
+<open-data class="userinfo-nickname" type="userNickName"></open-data>
+</view> 
+
+    <view class="user-name">
+      <view class="user-nickname">
+        <text>{{userInfo.nickName}}</text>
+      </view>
+    </view>
+
+  </view>
+<!--========分割线================-->
+
+
+<!--从数据库获得具体会议，创建的会议列表-->
+
+<view class="container" wx:for="{{postList}}" wx:for-item="postList">
+  <!--呈现的页面跳转https://blog.csdn.net/dengpeng0419/article/details/54511725-->
+<navigator url="../detail/detail?event_id={{postList.c_id}}">
+
+<view>{{postList.c_name}}</view>
+
+</navigator>
+
+</view>
+
+    

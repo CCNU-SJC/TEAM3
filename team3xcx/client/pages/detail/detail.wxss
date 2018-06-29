@@ -1,0 +1,6 @@
+/* pages/detail/detail.wxss */
+.submit{
+  margin:30rpx;
+  padding:30rpx;
+  
+}

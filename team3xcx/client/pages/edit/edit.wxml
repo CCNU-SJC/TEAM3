@@ -1,0 +1,42 @@
+<view class="page">
+<form class="page__bd" catchsubmit="formSubmit">
+<input name="c_id" id="hidden" value="{{logs.c_id}}" />
+<view>会议名称：</view>
+<input name="c_name" value="{{logs.c_name}}" placeholder="请输入会议名称" />
+
+ 
+<picker mode="date" name="c_date" value="{{logs.c_date}}" bindchange="bindDateChange">
+    <view>开会日期：{{logs.c_date}}</view>
+    <view>{{c_date}}</view>
+</picker> 
+<picker mode="time" name="c_time" bindchange="bindTimeChange">
+      <view>开会时间：{{logs.c_time}}</view>
+      <view>{{c_time}}</view>
+    </picker>
+
+    <picker mode="date" name="c_open" bindchange="bindOdChange">
+      <view>开始日期：{{logs.c_open}}</view>
+      <view>{{c_open}}</view>
+    </picker> 
+    
+    <picker mode="date" name="c_close" bindchange="bindDdlChange">
+      <view>结束日期：{{logs.c_close}}</view>
+      <view>{{c_close}}</view>
+    </picker>
+
+    <textarea name="c_remark" value="{{logs.c_remark}}" placeholder='请输入会议详情' bindblur='bindRemark'/>
+
+<navigator url="../detail/detail?event_id={{logs.c_id}}">
+ <button class="btn-area" formType="submit" data-event="{{logs.c_id}}">提交</button>
+</navigator>
+<!--
+<view class="btn-area">
+  <button formType="submit">提交</button>
+</view>
+-->
+
+<view class="page__hd" wx:if="{{error}}">
+      <text>{{error}}</text>
+    </view>
+    </form>
+</view>

@@ -1,0 +1,21 @@
+/* 
+
+.selector,input,.section_title{
+  color:#717171;
+  font-size:1.1rem;
+  margin-bottom:20rpx;
+  margin-left:50rpx;
+}
+textarea{
+  color:#717171;
+  margin-top:20rpx;
+  font-size:1.1rem;
+  margin-left:50rpx;
+}
+.section_title{
+  margin-top:70rpx;
+}
+input{
+  font-size:1rem;
+}
+*/

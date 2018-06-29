@@ -1,0 +1,32 @@
+<html>
+<view id="adduser"> 
+<view class="userinfo"> 
+<open-data class="userinfo-avatar" type="userAvatarUrl"></open-data>
+<open-data class="userinfo-nickname" type="userNickName"></open-data>
+</view>  
+
+    <form bindsubmit="formSubmit" bindreset="formReset">  
+         <view class="section">  
+            <view class="name">姓名:</view>  
+            <view class='form-group'>  
+                <input type="text" class="input-text" name="u_name" placeholder="请输入姓名" />  
+            </view>      
+        </view>  
+       
+        <view class="section btn-area">  
+            <button formType="submit">提交</button>  
+           
+        </view>  
+    </form>  
+  
+     <!-- 黑框提示并消失 -->  
+    <toast hidden="{{toast1Hidden}}" bindchange="toast1Change">  
+        {{notice_str}}  
+    </toast>  
+    <!-- 确认框 及 提示框 -->  
+    <view class="page__bd">  
+        <modal title="确认" confirm-text="确定" cancel-text="取消" hidden="{{modalHidden}}" mask bindconfirm="confirm_one" bindcancel="cancel_one">  
+            确认提交么？</modal>  
+     </view>  
+</view>      
+</html>

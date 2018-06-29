@@ -1,0 +1,13 @@
+ <template name="postItemTpl">
+ <view class="post-container">
+
+      <view class="post-author-date">
+      <text class="post-title">{{postList}}</text>
+      
+
+       <image class="post-image" src="/images/icon/edit.png" ></image>
+
+    <image class="post-image" src="/images/icon/cha.png" ></image>
+     </view> 
+    </view>
+ </template>

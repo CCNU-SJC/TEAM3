@@ -1,0 +1,16 @@
+<!--pages/detail/detail.wxml-->
+<view class="container">
+ 
+<view>会议名称：{{logs.c_name}}</view>
+<view>开会日期：{{logs.c_date}}</view>
+<view>开会时间：{{logs.c_time}}</view>
+<view>开始日期：{{logs.c_open}}</view>
+<view>结束日期：{{logs.c_close}}</view>
+<view>会议说明：{{logs.c_remark}}</view>
+
+<!--<button type="primary" bindtap="verify1">去确认</button>-->
+<navigator url="../submit/submit?event_id={{logs.c_id}}">
+ <view class="submit">去确认</view>
+</navigator>
+</view>
+

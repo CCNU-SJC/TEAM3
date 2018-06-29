@@ -1,0 +1,26 @@
+/* pages/submit/submit.wxss */
+.userinfo {  
+  display: flex;  
+  flex-direction: column;  
+  align-items: center;  
+}  
+.userinfo-avatar {  
+  width: 128rpx;  
+  height: 128rpx;  
+  margin-top: -100rpx;  
+  border-radius: 50%;  
+}  
+.userinfo-nickname { 
+  margin-top:20rpx;
+  margin-bottom:100rpx; 
+  color: #aaa;  
+} 
+radio-group{
+  margin-bottom:50rpx;
+}
+label{
+  margin-right:60rpx;  
+}
+textarea{
+  color:#717171;
+}

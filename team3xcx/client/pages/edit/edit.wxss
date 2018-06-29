@@ -1,0 +1,7 @@
+/* pages/edit2/edit2.wxss */
+#hidden{
+  display:none;
+  position:relative;
+  left:-99999px;
+
+}

@@ -1,0 +1,51 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/submit/submit",
+    "pages/detail/detail",
+    "pages/setting/setting",
+    "pages/create_list/mycreate",
+    "pages/attend_list/myattendence",
+    "pages/create/create",
+    "pages/edit/edit"
+  ],
+  "window": {
+    "navigationBarBackgroundColor": "#8bbf71",
+    "navigationBarTitleText": "稳传",
+    "enablePullDownRefresh": true
+  },
+  "tabBar": {
+    "borderStyle": "black",
+    "selectedColor": "#8bbf71",
+    "color": "#333",
+    "backgroundColor": "#fff",
+    "position": "bottom",
+    "list": [
+      {
+        "pagePath": "pages/create/create",
+        "text": "新建",
+        "iconPath": "images/icon/wx_app_add.png",
+        "selectedIconPath": "images/icon/wx_app_add@HL.png"
+      },
+      {
+        "pagePath": "pages/create_list/mycreate",
+        "text": "我创建的",
+        "iconPath": "images/icon/wx_app_movie.png",
+        "selectedIconPath": "images/icon/wx_app_movie@HL.png"
+      },
+      {
+        "pagePath": "pages/attend_list/myattendence",
+        "text": "我参与的",
+        "iconPath": "images/icon/wx_app_news.png",
+        "selectedIconPath": "images/icon/wx_app_news@HL.png"
+      },
+      {
+        "pagePath": "pages/index/index",
+        "text": "我的",
+        "iconPath": "images/icon/wx_app_setting.png",
+        "selectedIconPath": "images/icon/wx_app_setting@HL.png"
+      }
+    ]
+  }
+}
+

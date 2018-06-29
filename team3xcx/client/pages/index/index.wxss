@@ -1,0 +1,38 @@
+.container{
+display: flex;
+flex-direction: column;
+align-items: center;
+
+}
+
+
+
+
+
+
+
+.user-avatar {
+
+  border-radius: 50%;
+
+}
+
+
+.user-nickname {
+  text-align: center;
+  color: #aaa;
+}
+
+.weui-cell__bd{
+   margin-top: 1rpx;
+   
+   width: 100%;
+   text-align:left;
+   padding-right: 500rpx;
+}
+page{background-color: #ffffff;
+}
+
+.weui-cells weui-cells_after-title{
+width:100%;
+}
